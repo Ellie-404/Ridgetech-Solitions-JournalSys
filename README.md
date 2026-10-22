@@ -1,1 +1,0 @@
-# Ridgetech-Solitions-JournalSys
