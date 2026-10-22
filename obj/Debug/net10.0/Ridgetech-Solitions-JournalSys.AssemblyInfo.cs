@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ridgetech-Solitions-JournalSys")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdc9718be9578c574dd33714d0b2bf2f6f56ef5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a3b1dfee946aa9e2edae618c2b347fadacd2991")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ridgetech-Solitions-JournalSys")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ridgetech-Solitions-JournalSys")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
