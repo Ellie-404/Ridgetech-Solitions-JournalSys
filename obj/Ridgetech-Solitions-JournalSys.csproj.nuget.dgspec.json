@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\Ridgetech-Solitions-JournalSys\\Ridgetech-Solitions-JournalSys.csproj": {}
+    "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\Ridgetech-Solitions-JournalSys.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\Ridgetech-Solitions-JournalSys\\Ridgetech-Solitions-JournalSys.csproj": {
+    "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\Ridgetech-Solitions-JournalSys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\Ridgetech-Solitions-JournalSys\\Ridgetech-Solitions-JournalSys.csproj",
+        "projectUniqueName": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\Ridgetech-Solitions-JournalSys.csproj",
         "projectName": "Ridgetech-Solitions-JournalSys",
-        "projectPath": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\Ridgetech-Solitions-JournalSys\\Ridgetech-Solitions-JournalSys.csproj",
+        "projectPath": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\Ridgetech-Solitions-JournalSys.csproj",
         "packagesPath": "C:\\Users\\Ebjer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\Ridgetech-Solitions-JournalSys\\obj\\",
+        "outputPath": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
