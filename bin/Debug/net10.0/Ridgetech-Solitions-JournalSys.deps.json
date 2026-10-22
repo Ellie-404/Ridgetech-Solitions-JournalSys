@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Ridgetech-Solitions-JournalSys/1.0.0": {
+        "runtime": {
+          "Ridgetech-Solitions-JournalSys.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ridgetech-Solitions-JournalSys/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
