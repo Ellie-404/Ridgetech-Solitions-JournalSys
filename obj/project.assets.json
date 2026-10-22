@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\Ridgetech-Solitions-JournalSys.csproj",
-      "projectName": "Ridgetech-Solitions-JournalSys",
-      "projectPath": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\Ridgetech-Solitions-JournalSys.csproj",
+      "projectUniqueName": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\JournalSys.csproj",
+      "projectName": "JournalSys",
+      "projectPath": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\JournalSys.csproj",
       "packagesPath": "C:\\Users\\Ebjer\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ebjer\\OneDrive - Buskerud fylkeskommune\\Documents\\Programfag\\JournalSys\\obj\\",
       "projectStyle": "PackageReference",

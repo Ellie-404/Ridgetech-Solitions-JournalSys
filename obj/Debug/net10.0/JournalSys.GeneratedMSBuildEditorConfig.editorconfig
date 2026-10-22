@@ -10,8 +10,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Ridgetech_Solitions_JournalSys
-build_property.RootNamespace = Ridgetech_Solitions_JournalSys
+build_property.RootNamespace = JournalSys
+build_property.RootNamespace = JournalSys
 build_property.ProjectDir = C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
@@ -53,4 +53,4 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-d30rdeguyd
+build_metadata.AdditionalFiles.CssScope = b-32f71f9jsm

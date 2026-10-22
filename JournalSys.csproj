@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Ridgetech_Solitions_JournalSys</RootNamespace>
+    <RootNamespace>JournalSys</RootNamespace>
   </PropertyGroup>
 
 </Project>
