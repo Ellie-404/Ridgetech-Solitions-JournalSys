@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace JournalSys.Pages
 {
-    public class LoginnModel : PageModel
+    public class LoginModel : PageModel
     {
         public void OnGet()
         {
