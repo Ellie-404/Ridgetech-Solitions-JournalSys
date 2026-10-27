@@ -1,0 +1,17 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+@model ReseptModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div>
+    <h2>Resepter</h2>
+</div>
+<div>
+    <p>Her kan du se og administrere dine resepter.</p>
+    <button type="button" class="btn btn-primary">Aktive Resepter</button>
+    <button type="button" class="btn btn-primary">Alle Resepter</button>
+</div>
+
