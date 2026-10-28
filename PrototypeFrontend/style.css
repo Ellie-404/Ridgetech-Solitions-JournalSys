@@ -1,0 +1,26 @@
+
+
+body { background: var(--bg); }
+.navbar, .btn-primary { background-color: var(--primary); }
+
+
+#header{
+    background-color: var(--primary);
+    width: 100%;
+    height: 60px;
+}
+
+#mainContent{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
+#footer{
+    background-color: var(--primary);
+    width: 100%;
+    height: 60px;
+}
