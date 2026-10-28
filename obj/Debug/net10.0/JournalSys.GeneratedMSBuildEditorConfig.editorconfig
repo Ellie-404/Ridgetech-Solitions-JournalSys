@@ -1,15 +1,23 @@
 is_global = true
 build_property.TargetFramework = net10.0
-build_property.TargetFrameworkIdentifier = .NETCoreApp
-build_property.TargetFrameworkVersion = v10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EntryPointFilePath = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
 build_property.RootNamespace = JournalSys
 build_property.RootNamespace = JournalSys
 build_property.ProjectDir = C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\
@@ -27,8 +35,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Felles/Innboks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVsbGVzXElubmJva3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Felles/Skrivebord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVsbGVzXFNrcml2ZWJvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Lege/PasientListe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVnZVxQYXNpZW50TGlzdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Login.cshtml]
@@ -41,6 +61,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Shared/SkrivebordAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXFNrcml2ZWJvcmRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Shared/SkrivebordLege.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXFNrcml2ZWJvcmRMZWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Shared/SkrivebordPasient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXFNrcml2ZWJvcmRQYXNpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ebjer/OneDrive - Buskerud fylkeskommune/Documents/Programfag/JournalSys/Pages/Shared/_ValidationScriptsPartial.cshtml]
