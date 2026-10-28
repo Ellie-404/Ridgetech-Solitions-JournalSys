@@ -15,4 +15,5 @@ public class JournalDbContext : DbContext
     public DbSet<LabTest> LabTests { get; set; }
     public DbSet<LabResult> LabResults { get; set;}
     public DbSet<DoctorNote> DoctorNotes { get; set; }
+    public DbSet<HistoryEntry> HistoryEntries { get; set; }
 }

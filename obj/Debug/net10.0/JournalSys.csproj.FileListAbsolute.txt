@@ -22,7 +22,6 @@ C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\scopedcss\bundle\JournalSys.styles.css
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\scopedcss\projectbundle\JournalSys.bundle.scp.css
-C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\compressed\tcx9rwnxzu-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\compressed\e1inr8wgw3-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\compressed\itezp2mjl5-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\compressed\u2hp6vc43c-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -212,3 +211,4 @@ C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\JournalSys.csproj.AssemblyReference.cache
 C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\JournalSys.csproj.Up2Date
+C:\Users\Ebjer\OneDrive - Buskerud fylkeskommune\Documents\Programfag\JournalSys\obj\Debug\net10.0\compressed\tcx9rwnxzu-{0}-iznvj9q925-iznvj9q925.gz

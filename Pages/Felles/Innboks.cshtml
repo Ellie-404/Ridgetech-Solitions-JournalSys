@@ -7,3 +7,26 @@
 <div>
     <h2>Innboks</h2>
 </div>
+
+<div>
+
+@if (!Model.Meldinger.Any())
+{
+    <p>Ingen meldinger.</p>
+}
+else
+{
+    <div class="list-group">
+        @foreach (var m in Model.Meldinger)
+        {
+            <a href="#" class="list-group-item list-group-item-action @(m.Lest ? "" : "ulest")">
+                <div class="d-flex justify-content-between">
+                    <strong>@m.Avsender</strong>
+                    <small>@m.Sendt.ToString("dd.MM HH:mm")</small>
+                </div>
+                <div>@m.Emne</div>
+            </a>
+        }
+    </div>
+}
+</div>
