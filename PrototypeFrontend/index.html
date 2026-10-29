@@ -5,20 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link id="rolleCss" rel="stylesheet" href="">
+    <link id="rolleCss" rel="stylesheet" href="patient.css">
 </head>
 <body>
     <div id="header">
-        <button id="legeRolle" onclick="changeRole('doctor')">Lege</button>
-        <button id="pasientRolle" onclick="changeRole('patient')">Pasient</button>
-        <button id="adminRolle" onclick="changeRole('admin')">Admin</button>
+        <div id="headerContainer">
+            <h1>HelseSys</h1>
+            <div>
+                <button id="legeRolle" onclick="changeRole('doctor')">Lege</button>
+                <button id="pasientRolle" onclick="changeRole('patient')">Pasient</button>
+                <button id="adminRolle" onclick="changeRole('admin')">Admin</button>
+            </div>
+        </div>
+    </div>
+    <div id="tjenestePanel">
+        <div id="tjenestePanelContainer">
+            <h1>Hva ser du etter ?</h1>
+            <h2>Tjenester</h2>
+            <div id="col">
+                <div id="box"><a href="/Resept">Resepter</a></div>
+                <div id="box"><a href="/Timebestilling">Timebestilling</a></div>
+                <div id="box"><a href="/Profile">Profil</a></div>
+            </div>
+            <div>
+                See mer!
+            </div>
+        </div>
     </div>
     <div id="mainContent">
-        <div><a href="/Resept">Resepter</a></div>
-        <div><a href="/Timebestilling">Timebestilling</a></div>
-        <div><a href="/Profile">Profil</a></div>
+        
     </div>
-    <div id="footer"></div>
+    <div id="footer">
+
+    </div>
 
     <script src="script.js"></script>
 </body>
