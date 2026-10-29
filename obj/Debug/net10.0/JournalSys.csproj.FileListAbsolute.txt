@@ -426,3 +426,6 @@ C:\Users\krist\OneDrive - Buskerud fylkeskommune\VIM 2526\DevOps\Ridgetech-Solit
 C:\Users\krist\OneDrive - Buskerud fylkeskommune\VIM 2526\DevOps\Ridgetech-Solitions-JournalSys\obj\Debug\net10.0\JournalSys.pdb
 C:\Users\krist\OneDrive - Buskerud fylkeskommune\VIM 2526\DevOps\Ridgetech-Solitions-JournalSys\obj\Debug\net10.0\JournalSys.genruntimeconfig.cache
 C:\Users\krist\OneDrive - Buskerud fylkeskommune\VIM 2526\DevOps\Ridgetech-Solitions-JournalSys\obj\Debug\net10.0\ref\JournalSys.dll
+C:\Users\krist\OneDrive - Buskerud fylkeskommune\VIM 2526\DevOps\Ridgetech-Solitions-JournalSys\obj\Debug\net10.0\compressed\zn0btb25re-{0}-m8rwy13vzz-m8rwy13vzz.gz
+C:\Users\krist\OneDrive - Buskerud fylkeskommune\VIM 2526\DevOps\Ridgetech-Solitions-JournalSys\obj\Debug\net10.0\compressed\p03tjfqv60-{0}-rgsoer6vch-rgsoer6vch.gz
+C:\Users\krist\OneDrive - Buskerud fylkeskommune\VIM 2526\DevOps\Ridgetech-Solitions-JournalSys\obj\Debug\net10.0\compressed\iu8vyq6wss-{0}-jahckkf743-jahckkf743.gz

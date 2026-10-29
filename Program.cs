@@ -22,6 +22,8 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<JournalDbContext>(options => 
     options.UseSqlite("Data source=journal.db"));
 
+builder.Services.AddScoped<JournalSys.Services.HistoryService>();
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())

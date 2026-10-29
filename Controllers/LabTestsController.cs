@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using JournalSys.Data;
 using JournalSys.Models;
+using JournalSys.Services;
 
 namespace JournalSys.Controllers;
 
@@ -10,10 +11,12 @@ namespace JournalSys.Controllers;
 public class LabTestsController : ControllerBase
 {
     private readonly JournalDbContext _db;
+    private readonly HistoryService _historikk;
 
-    public LabTestsController(JournalDbContext db)
+    public LabTestsController(JournalDbContext db, HistoryService historikk)
     {
         _db = db;
+        _historikk = historikk;
     }
 
     [HttpGet]
@@ -54,6 +57,9 @@ public class LabTestsController : ControllerBase
         resultat.LabTestId = id;
         _db.LabResults.Add(resultat);
         await _db.SaveChangesAsync();
+
+        await _historikk.Logg(prove.PatientId, prove.DoctorId, "Prøve bestilt", prove.Type);
+
         return resultat;
     }
 }

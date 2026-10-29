@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using JournalSys.Data;
 using JournalSys.Models;
+using JournalSys.Services;
 
 namespace JournalSys.Controllers;
 
@@ -10,10 +11,12 @@ namespace JournalSys.Controllers;
 public class AppointmentsController : ControllerBase
 {
     private readonly JournalDbContext _db;
+    private readonly HistoryService _historikk;
 
-    public AppointmentsController(JournalDbContext db)
+    public AppointmentsController(JournalDbContext db, HistoryService historikk)
     {
         _db = db;
+        _historikk = historikk;
     }
 
     [HttpGet]
@@ -42,6 +45,8 @@ public class AppointmentsController : ControllerBase
 
         _db.Appointments.Add(time);
         await _db.SaveChangesAsync();
+
+        await _historikk.Logg(time.PatientId, time.DoctorId, "Time bestilt", $"Time {time.Tidspunkt:dd.MM.yyyy HH:mm}: {time.Arsak}");
         return time;
     }
 }
