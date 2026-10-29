@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using JournalSys.Data;
 using JournalSys.Models;
+using JournalSys.Services;
 
 namespace JournalSys.Controllers;
 
@@ -10,10 +11,12 @@ namespace JournalSys.Controllers;
 public class NotesController : ControllerBase
 {
     private readonly JournalDbContext _db;
+    private readonly HistoryService _historikk;
 
-    public NotesController(JournalDbContext db)
+    public NotesController(JournalDbContext db, HistoryService historikk)
     {
         _db = db;
+        _historikk = historikk;
     }
 
     [HttpGet]
@@ -47,6 +50,9 @@ public class NotesController : ControllerBase
 
         _db.DoctorNotes.Add(notat);
         await _db.SaveChangesAsync();
+
+        await _historikk.Logg(notat.PatientId, notat.DoctorId, "Notat skrevet", "Nytt legenotat opprettet");
+
         return notat;
     }
 }
