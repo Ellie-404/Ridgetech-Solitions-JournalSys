@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using JournalSys.Data;
 using JournalSys.Models;
 
@@ -7,6 +8,7 @@ namespace JournalSys.Controllers;
 
 [ApiController]
 [Route("patients")]
+[Authorize]
 public class PatientsController : ControllerBase
 {
     private readonly JournalDbContext _db;
