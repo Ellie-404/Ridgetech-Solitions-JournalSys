@@ -1,26 +1,78 @@
 
+body {
+    background: var(--bg);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
-body { background: var(--bg); }
-.navbar, .btn-primary { background-color: var(--primary); }
+.navbar, .btn-primary{
+    background-color: var(--primary); 
+}
 
 
 #header{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
     background-color: var(--primary);
-    width: 100%;
-    height: 60px;
+    justify-content:center;
 }
 
-#mainContent{
+#headerContainer{
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
     align-items: center;
+}
+
+
+#tjenestePanel{
+    background-color: var(--primary);
+    flex:5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#tjenestePanelContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 70%;
+}
+
+#col{
+    display: flex;
+    flex-direction: row;
     gap: 10px;
     width: 100%;
-    height: calc(100vh - 120px);
+    
+}
+
+#box{
+    background: var(--seccondary);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 5px;
+}
+
+#mainContent {
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer{
+    margin-top: auto;
+    flex: 1;
+    display: flex;
     background-color: var(--primary);
-    width: 100%;
-    height: 60px;
 }
