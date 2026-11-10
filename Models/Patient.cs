@@ -7,4 +7,6 @@ public class Patient
         public string Etternavn { get; set; } = "";
         public DateTime Fodselsdato { get; set; }
         public string Telefon { get; set; } = "";
+        public string Personnummer { get; set; } = "";
+        public string Adresse { get; set; } = "";
 }
