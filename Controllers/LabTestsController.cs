@@ -29,6 +29,15 @@ public class LabTestsController : ControllerBase
             .ToListAsync();
     }
 
+    [HttpGet("appointment/{appointmentId}")]
+    public async Task<List<LabTest>> HentForTime(int appointmentId)
+    {
+        return await _db.LabTests
+            .Where(t => t.AppointmentId == appointmentId)
+            .Include(t => t.Resultat)
+            .ToListAsync();
+    }
+
     [HttpPost]
     public async Task<ActionResult<LabTest>> Bestill(LabTest prove)
     {

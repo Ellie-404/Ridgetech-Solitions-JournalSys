@@ -48,8 +48,19 @@ public class AppointmentsController : ControllerBase
 
         foreach (var typeId in time.ProveTypeIds)
         {
-            var type = await _db.LabTestTypes
+            var type = await _db.LabTestTypes.FindAsync(typeId);
+            if (type == null) continue;
+
+            _db.LabTests.Add(new LabTest
+            {
+                Type = type.Navn,
+                LabTestTypeId = type.Id,
+                AppointmentId = time.Id,
+                PatientId = time.PatientId,
+                DoctorId = time.DoctorId
+            });
         }
+        await _db.SaveChangesAsync();
 
         await _historikk.Logg(time.PatientId, time.DoctorId, "Time bestilt", $"Time {time.Tidspunkt:dd.MM.yyyy HH:mm}: {time.Arsak}");
         return time;

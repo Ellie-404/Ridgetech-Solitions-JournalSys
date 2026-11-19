@@ -46,6 +46,16 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<JournalDbContext>();
     db.Database.EnsureCreated();
+
+    if (!db.LabTestTypes.Any())
+    {
+        db.LabTestTypes.AddRange(
+            new JournalSys.Models.LabTestType { Navn = "Blodprøve", Beskrivelse = "Generell blodprøve" },
+            new JournalSys.Models.LabTestType { Navn = "Urinprøve", Beskrivelse = "Urinanalyse" },
+            new JournalSys.Models.LabTestType { Navn = "EKG", Beskrivelse = "Hjerterytme" }
+        );
+        db.SaveChanges();
+    }
 }
 
 if (!app.Environment.IsDevelopment())
