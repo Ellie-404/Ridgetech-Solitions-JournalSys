@@ -46,7 +46,45 @@ public class AppointmentsController : ControllerBase
         _db.Appointments.Add(time);
         await _db.SaveChangesAsync();
 
+        foreach (var typeId in time.ProveTypeIds)
+        {
+            var type = await _db.LabTestTypes
+        }
+
         await _historikk.Logg(time.PatientId, time.DoctorId, "Time bestilt", $"Time {time.Tidspunkt:dd.MM.yyyy HH:mm}: {time.Arsak}");
+        return time;
+    }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Appointment>> Rediger(int id, Appointment oppdatert)
+    {
+        var time = await _db.Appointments.FindAsync(id);
+        if (time == null) return NotFound();
+
+        var legeFinnes = await _db.Doctors.AnyAsync(d => d.Id == oppdatert.DoctorId);
+        if (!legeFinnes)
+            return BadRequest("Lege finnes ikke.");
+
+        var opptatt = await _db.Appointments.AnyAsync(a => 
+        a.Id != id &&
+        a.DoctorId == oppdatert.DoctorId &&
+        a.Tidspunkt == oppdatert.Tidspunkt);
+
+        if (opptatt)
+            return BadRequest("Legen har allerede en time på dette tidspunktet.");
+
+        var gammeltTidspunkt = time.Tidspunkt;
+
+        time.Tidspunkt = oppdatert.Tidspunkt;
+        time.Arsak = oppdatert.Arsak;
+        time.Farge = oppdatert.Farge;
+        time.DoctorId = oppdatert.DoctorId;
+
+        await _db.SaveChangesAsync();
+
+        await _historikk.Logg(time.PatientId, time.DoctorId, "Time endret",
+            $"Tidspunkt endret fra {gammeltTidspunkt:dd.MM.yyyy HH:mm} til {time.Tidspunkt:dd.MM.yyyy HH:mm}: {time.Arsak}");
+        
         return time;
     }
 }
