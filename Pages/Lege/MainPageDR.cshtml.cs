@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace JournalSys.Pages.Shared
+namespace JournalSys.Pages.Lege
 {
-    public class SkrivebordLegeModel : PageModel
+    public class MainPageDRModel : PageModel
     {
         public void OnGet()
         {

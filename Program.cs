@@ -3,12 +3,16 @@ using JournalSys.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// TODO: skru på AuthorizeFolder igjen når innlogging er klar osv
+
 builder.Services.AddRazorPages(options =>
-{
+{   
+    /*
     options.Conventions.AuthorizeFolder("/Pasient");
     options.Conventions.AuthorizeFolder("/Lege");
     options.Conventions.AuthorizeFolder("/Admin");
     options.Conventions.AllowAnonymousToPage("/Login");
+    */
 });
 
 builder.Services.AddAuthentication("Cookies")
