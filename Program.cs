@@ -16,6 +16,22 @@ builder.Services.AddAuthentication("Cookies")
     {
         options.LoginPath = "/Login";
         options.AccessDeniedPath = "/Index";
+
+        options.Events.OnRedirectToLogin = context =>
+        {
+            if (context.Request.Path.StartsWithSegments("/patients") ||
+                context.Request.Path.StartsWithSegments("/doctors") ||
+                context.Request.Path.StartsWithSegments("/appointments") ||
+                context.Request.Path.StartsWithSegments("/labtests") ||
+                context.Request.Path.StartsWithSegments("/notes") ||
+                context.Request.Path.StartsWithSegments("/history"))
+            {
+                context.Response.StatusCode = 401;
+                return Task.CompletedTask;
+            }
+            context.Response.Redirect(context.RedirectUri);
+            return Task.CompletedTask;
+        };
     });
 
 builder.Services.AddControllers();
@@ -30,6 +46,16 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<JournalDbContext>();
     db.Database.EnsureCreated();
+
+    if (!db.LabTestTypes.Any())
+    {
+        db.LabTestTypes.AddRange(
+            new JournalSys.Models.LabTestType { Navn = "Blodprøve", Beskrivelse = "Generell blodprøve" },
+            new JournalSys.Models.LabTestType { Navn = "Urinprøve", Beskrivelse = "Urinanalyse" },
+            new JournalSys.Models.LabTestType { Navn = "EKG", Beskrivelse = "Hjerterytme" }
+        );
+        db.SaveChanges();
+    }
 }
 
 if (!app.Environment.IsDevelopment())

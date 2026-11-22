@@ -12,4 +12,6 @@ public class LabTest
     public int DoctorId { get; set; }
     public Doctor? Doctor { get; set; }
     public LabResult? Resultat { get; set; }
+    public int? LabTestTypeId { get; set; }
+    public int? AppointmentId { get; set; }
 }

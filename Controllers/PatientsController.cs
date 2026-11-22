@@ -1,12 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using JournalSys.Data;
 using JournalSys.Models;
+using JournalSys.Services;
 
 namespace JournalSys.Controllers;
 
 [ApiController]
 [Route("patients")]
+// [Authorize]
 public class PatientsController : ControllerBase
 {
     private readonly JournalDbContext _db;
@@ -32,6 +35,15 @@ public class PatientsController : ControllerBase
     [HttpPost]
     public async Task<Patient> LagNy(Patient pasient)
     {
+        _db.Patients.Add(pasient);
+        await _db.SaveChangesAsync();
+        return pasient;
+    }
+
+    [HttpPost("generer")]
+    public async Task<Patient> Generer()
+    {
+        var pasient = PatientGenerator.Lag();
         _db.Patients.Add(pasient);
         await _db.SaveChangesAsync();
         return pasient;
