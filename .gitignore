@@ -480,3 +480,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# SQLite-database (lages automatisk lokalt, skal ikke inn i Git)
+journal.db
+journal.db-shm
+journal.db-wal
