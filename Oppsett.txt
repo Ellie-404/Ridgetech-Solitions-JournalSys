@@ -1,0 +1,60 @@
+
+
+
+Nettside for Helse journal. 
+
+StartSide:                                              || Loginn Database ||
+    Loginn 
+        Admin
+        Sekretær
+        Lege
+
+------------------Sekretær--------------------------------------------
+
+HovedMeny
+    Pasient Liste. 
+        Liste over eksisterende pasienter + søkefelt.   || Pasient Database må kunne redigere opplysninger osv||
+            Pasient navn.                                       
+                inne på pasient profil: 
+                    Kunne skrive inn hvorfor de er her. 
+                    bestille prøver. 
+                    see prøve resultat. 
+                    kunne see hvem fastlege de evt har. 
+        Knapp for å legge til / opprette ny pasient.        
+            skrivefelt for å plotte inn pasient informasjon. 
+                felt for: 
+                    Fullt navn.
+                    Fødsels Dato og person nr
+                    Addresse. 
+                    Kjønn. 
+                    Pårørende. 
+                    hvem lege de har hvis de har en. 
+                    felt for evt notater. 
+
+    Kalender.                                           || Timeplan Database ||
+        kunne gå inn på forskjellige leger og see timeplan 
+                forskjellig grad av timer som henger sammen visuelt med en farge. 
+                ledige timer = blanke. 
+                grønn = normal oransj=Dobbel rød=hastetime
+                blå kan signalisere lunsjpauser osv i kalenderen
+        kunne sette opp en time hos lege med notat. 
+    Prøver.                                             || Prøver Database ||
+        Liste over prøver kategorisert etter type. 
+            bloodprøver .
+            urinprøver. 
+        kunne legge inn nye prøver. 
+        kunne lage "pakker" som prøver for diabetikere osv
+    Meldinger.                                          || Meldinger Database ||
+
+----------------------------------Lege-------------------------------------------------
+    bscly samme som sekretær
+----------------------------------Admin-------------------------------------------------
+
+HovedMeny 
+
+    Pasient Liste
+
+    Brukere. 
+        Kunne sette opp nye sekretær brukere. 
+        kunne sette opp nye lege brukere. 
+
