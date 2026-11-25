@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace JournalSys.Pages.Felles
 {
-    public class SkrivebordModel : PageModel
+    public class PatientListModel : PageModel
     {
         public void OnGet()
         {

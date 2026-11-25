@@ -1,7 +1,20 @@
 ﻿@page
 @model JournalSys.Pages.Lege.MainPageDRModel
 @{
+    ViewData["Title"] = "MainPageDR";
 }
 <div>
     <h1>Doctor</h1>
+</div>
+
+<div class="row align-items-center bg-light">
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/PatientList">Pasienter</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/Timetable">timetabell</a>
+    </div>
+    <div class="col hover-effect">
+        Prøver
+    </div>
 </div>
