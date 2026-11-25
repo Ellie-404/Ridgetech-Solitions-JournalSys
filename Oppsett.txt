@@ -1,0 +1,108 @@
+
+
+
+Nettside for Helse journal. 
+
+StartSide:                                              || Loginn Database ||
+    Loginn 
+        Admin
+        Sekretær
+        Lege
+
+-------------------------------Sekretær----------------------------
+
+HovedMeny
+    Pasient Liste.
+        Liste over eksisterende pasienter + søkefelt.   || Pasient Database må kunne redigere opplysninger osv||
+            Pasient navn.                                       
+                inne på pasient profil: 
+                    Historikk sammen med notater om hvem som skrev notatet og når
+                    historikk over hva som er gjort hvilke prøver som ble bestil og når osv.
+                    Kunne skrive inn hvorfor de er her. 
+                    sette opp time. konsultasjonstype. + note hva problemet er osv
+                    kunne skrive notat feks ( pasient tok kontakt via tlf)
+                    rekvirere prøver. 
+                    see prøve resultat. 
+                    kunne see hvem fastlege de evt har. 
+
+        Knapp for å legge til / opprette ny pasient.        
+            skrivefelt for å plotte inn pasient informasjon. 
+                felt for: 
+                    Fullt navn.
+                    Fødsels Dato og person nr
+                    Addresse. 
+                    Kjønn. 
+                    Pårørende. 
+                        navn 
+                        Addresse
+                        kontakt informasjon.
+                        relasjon
+                    hvem lege de har hvis de har en. 
+                    felt for evt notater. 
+                    kontakt informasjon: tlf nr | Email
+
+    Kalender / Timebok.                                           || Timeplan Database ||
+        Mulighet for timebytte osv
+        mulighet for å sette time etter alvorlighets grad samt notat
+        kunne gå inn på forskjellige leger og see timeplan 
+                forskjellig grad av timer som henger sammen visuelt med en farge. 
+                ledige timer = blanke. 
+                grønn = normal oransj=Dobbel rød=hastetime
+                blå kan signalisere lunsjpauser osv i kalenderen
+        kunne sette opp en time hos lege med notat. 
+    Prøver.                                             || Prøver Database ||
+        Liste over prøver kategorisert etter type. 
+            bloodprøver .
+            urinprøver. 
+        kunne legge inn nye prøver. 
+        kunne lage "pakker" som prøver for diabetikere osv
+    Meldinger.                                          || Meldinger Database ||
+
+----------------------------------Lege-------------------------------------------------
+
+bscly samme som sekretær
+
+
+
+----------------------------------Admin-------------------------------------------------
+
+HovedMeny 
+
+    Pasient Liste.
+        kunne see logg/Historikk på hvem hva hvor som ble notert av hvem og når || Database ||
+    lege liste.
+    sekretær liste.
+
+    Brukere. 
+        Kunne sette opp nye sekretær brukere. 
+        kunne sette opp nye lege brukere. 
+
+    eksamens retta tilgang / innsyn.
+
+
+
+
+
+-------------------------------------------------------------------------------------------------
+
+Sette opp en type prøveform, som lærerene kan rette.
+Legge inn prøver som skal kunne velges av sektretær når de oppretter time for pasient.
+ 
+Hvem er de faktiske brukerne (elever, lærere, begge), og hvor mange samtidig?
+Lege, sektretær og admin
+Legene skal være fiktive
+Legene og sektretærer skal ha lik tilgang.
+ 
+Timebestilling: kan pasienten velge lege selv, eller bare tid? Kan timer avbestilles eller flyttes?
+Pasient ringer, og sekretær bestemmer time.
+ 
+De spør om å kunne redigere time som allerede er avtalt.
+De har ønske om historikk (når legetime blir lagt til, hva den handlet om og når det skjer).
+Når en pasient opprettes, så lages tilfeldig fødselsdato, personnummer, navn, etternavn, og adresse.
+Sekretær skal kunne hente pasient og lage ny pasient.
+Kunne markere timer som grønn, gul, rød eller blå.
+ 
+Bonus: Kunne opprette faktura og regnskap.
+
+
+    

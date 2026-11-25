@@ -8,13 +8,21 @@
     <h1 class="display-4">Welcome</h1>
     <p>Hva trenger du hjelp til i dag?</p>
 </div>
+<div id="tjenestePanel">
+        <div id="tjenestePanelContainer">
+            <h1>Hva ser du etter ?</h1>
+            <h2>Tjenester</h2>
+            <div id="col">
+                <div id="box"><a href="/Resept">Resepter</a></div>
+                <div id="box"><a href="/Timebestilling">Timebestilling</a></div>
+                <div id="box"><a href="/Profile">Profil</a></div>
+            </div>
+        </div>
+    </div>
 
 <div>
-    <div><a href="/Resept">Resepter</a></div>
-    <div><a href="/Timebestilling">Timebestilling</a></div>
-    <div><a href="/Profile">Profil</a></div>
-    <a class="nav-link text-dark" asp-area="" asp-page="Receptionist/MainPageReceptionist">StarsideSekretær</a>
-    <a class="nav-link text-dark" asp-area="" asp-page="Lege/MainPageDR">StarsideLege</a>
-    <a class="nav-link text-dark" asp-area="" asp-page="Admin/MainPageAdmin">StarsideAdmin</a>
+    <a  asp-page="Receptionist/MainPageReceptionist">StarsideSekretær</a>
+    <a  asp-page="Lege/MainPageDR">StarsideLege</a>
+    <a  asp-page="Admin/MainPageAdmin">StarsideAdmin</a>
 
 </div>

@@ -1,25 +1,23 @@
 html {
   font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+  position: relative;
+  min-height: 100%;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
   margin-bottom: 60px;
+  background: var(--bg);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
+------------------------------------V|HEADER|V------------------------------------
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
@@ -29,8 +27,80 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+#header{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary);
+    justify-content:center;
+}
+.navbar, .btn-primary{
+    background-color: var(--primary); 
+    width: 100%;
+}
+#headerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
 
-#mainContent{
-  display: flex;
-  flex-direction: column
-};
+-----------------------------------V|PAGE-CONTENT|V-------------------------
+
+#tjenestePanel{
+    background-color: var(--primary);
+    flex:5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#tjenestePanelContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 70%;
+}
+
+#col{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    
+}
+
+#box{
+    background: var(--seccondary);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 5px;
+}
+
+#mainContent {
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+-----------------------------------V|FOOTER|V--------------------------------
+
+#footer{
+    margin-top: auto;
+    flex: 1;
+    display: flex;
+    background-color: var(--primary);
+}
+
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
