@@ -17,4 +17,6 @@ public class JournalDbContext : DbContext
     public DbSet<DoctorNote> DoctorNotes { get; set; }
     public DbSet<HistoryEntry> HistoryEntries { get; set; }
     public DbSet<LabTestType> LabTestTypes { get; set; }
+    public DbSet<Assignment> Assignments { get; set; }
+    public DbSet<Submission> Submissions { get; set; }
 }
