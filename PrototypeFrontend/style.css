@@ -7,12 +7,10 @@ body {
     height: 100vh;
 }
 
-.navbar, .btn-primary{
-    background-color: var(--primary); 
-}
 
+----------------------------------------------V|HEADER|V----------------------------------
 
-#header{
+header{
     flex: 2;
     display: flex;
     flex-direction: row;
@@ -27,6 +25,11 @@ body {
     width: 70%;
     align-items: center;
 }
+.navbar, .btn-primary{
+    background-color: var(--primary); 
+}
+
+----------------------------------------------V|Content|V----------------------------------
 
 
 #tjenestePanel{
@@ -69,6 +72,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+-------------------------------------V|FOOTER|V-----------------------------------
 
 #footer{
     margin-top: auto;
