@@ -9,10 +9,10 @@ StartSide:                                              || Loginn Database ||
         Sekretær
         Lege
 
-------------------Sekretær--------------------------------------------
+-------------------------------Sekretær----------------------------
 
 HovedMeny
-    Pasient Liste. 
+    Pasient Liste.
         Liste over eksisterende pasienter + søkefelt.   || Pasient Database må kunne redigere opplysninger osv||
             Pasient navn.                                       
                 inne på pasient profil: 
@@ -28,8 +28,13 @@ HovedMeny
                     Addresse. 
                     Kjønn. 
                     Pårørende. 
+                        navn 
+                        Addresse
+                        kontakt informasjon.
+                        relasjon
                     hvem lege de har hvis de har en. 
                     felt for evt notater. 
+                    kontakt informasjon: tlf nr | Email
 
     Kalender.                                           || Timeplan Database ||
         kunne gå inn på forskjellige leger og see timeplan 
@@ -47,14 +52,25 @@ HovedMeny
     Meldinger.                                          || Meldinger Database ||
 
 ----------------------------------Lege-------------------------------------------------
-    bscly samme som sekretær
+
+bscly samme som sekretær
+
+
+
 ----------------------------------Admin-------------------------------------------------
 
 HovedMeny 
 
-    Pasient Liste
+    Pasient Liste.
+        kunne see logg på hvem hva hvor som ble notert av hvem og når || Database ||
+    lege liste.
+    sekretær liste.
 
     Brukere. 
         Kunne sette opp nye sekretær brukere. 
         kunne sette opp nye lege brukere. 
 
+    eksamens retta tilgang / innsyn.
+
+
+    
