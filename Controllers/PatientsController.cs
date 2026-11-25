@@ -32,6 +32,23 @@ public class PatientsController : ControllerBase
         return pasient;
     }
 
+    [HttpGet("sok")]
+    public async Task<List<Patient>> Sok(string q = "")
+    {
+        q = q.Trim();
+        if (q.Length == 0) return new List <Patient>();
+
+        return await _db.Patients
+            .Where(p => p.Fornavn.Contains(q)
+            || p.Etternavn.Contains(q)
+            || p.Personnummer.Contains(q)
+            || p.Telefon.Contains(q))
+        .OrderBy(p => p.Etternavn)
+        .ThenBy(p => p.Fornavn)
+        .Take(20)
+        .ToListAsync();
+    }
+
     [HttpPost]
     public async Task<Patient> LagNy(Patient pasient)
     {
