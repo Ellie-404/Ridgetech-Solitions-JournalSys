@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace JournalSys.Pages.Lege
+namespace JournalSys.Pages.Felles
 {
-    public class PasientListeModel : PageModel
+    public class NewPatientFormModel : PageModel
     {
         public void OnGet()
         {

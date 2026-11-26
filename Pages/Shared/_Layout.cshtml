@@ -11,19 +11,25 @@
     <link id="rolleCss" rel="stylesheet" href="~/css/secretary.css">
 </head>
 <body>
-    <header id="header">    
+
+    <header id="header">  
         <div id="headerContainer">
-            <nav class="navbar">
+            <nav class="navbar navbar-expand-sm">
                 <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-page="/Index">HelseJournal</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <a class="navbar-brand" asp-page="/Index">HelseJournal</a>
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
+                        <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
+                                <a class="nav-link text-dark " asp-page="/Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark"  asp-page="/Receptionist/MainPageReceptionist">StarsideSekretær</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-page="/Lege/MainPageDR">StarsideLege</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-page="/Admin/MainPageAdmin">StarsideAdmin</a>
                             </li>
                         </ul>
                     </div>
@@ -49,5 +55,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

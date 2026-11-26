@@ -1,7 +1,23 @@
 ﻿@page
 @model JournalSys.Pages.Receptionist.MainPageReceptionistModel
 @{
+    ViewData["Title"] = "MainPage";
 }
-<div>
+<div class="container">
     <h1>Receptionist</h1>
+</div>
+
+<div class="row align-items-center bg-light">
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/PatientList">Pasienter</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/Timetable">timetabell</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/Tests">Prøver</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="">Meldinger</a>
+    </div>
 </div>

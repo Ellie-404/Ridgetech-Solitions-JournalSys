@@ -4,25 +4,19 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
+<div class="container">
     <h1 class="display-4">Welcome</h1>
     <p>Hva trenger du hjelp til i dag?</p>
 </div>
-<div id="tjenestePanel">
-        <div id="tjenestePanelContainer">
-            <h1>Hva ser du etter ?</h1>
-            <h2>Tjenester</h2>
-            <div id="col">
-                <div id="box"><a href="/Resept">Resepter</a></div>
-                <div id="box"><a href="/Timebestilling">Timebestilling</a></div>
-                <div id="box"><a href="/Profile">Profil</a></div>
-            </div>
-        </div>
+
+<div class="row align-items-start">
+    <div class="col">
+        One of three columns
     </div>
-
-<div>
-    <a  asp-page="Receptionist/MainPageReceptionist">StarsideSekretær</a>
-    <a  asp-page="Lege/MainPageDR">StarsideLege</a>
-    <a  asp-page="Admin/MainPageAdmin">StarsideAdmin</a>
-
+    <div class="col">
+        One of three columns
+    </div>
+    <div class="col">
+        One of three columns
+    </div>
 </div>

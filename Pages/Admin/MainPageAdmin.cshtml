@@ -1,8 +1,33 @@
 ﻿@page
 @model JournalSys.Pages.Admin.MainPageAdminModel
 @{
+    ViewData["Title"] = "MainPageAdmin";
 }
 
-<div>
-    <h1>Amin</h1>
+<div class="container">
+    <h1>Admin</h1>
+</div>
+
+<div class="row align-items-center bg-light">
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/PatientList">Pasienter</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/Timetable">timetabell</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="/Felles/Tests">Prøver</a>
+    </div>
+</div>
+
+<div class="row align-items-center bg-light">
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="">Leger</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="">Meldinger</a>
+    </div>
+    <div class="col hover-effect">
+        <a class="nav-link text-dark" asp-page="">Sekretær</a>
+    </div>
 </div>

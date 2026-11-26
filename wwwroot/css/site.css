@@ -4,10 +4,6 @@ html {
   min-height: 100%;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 body {
   margin-bottom: 60px;
   background: var(--bg);
@@ -16,27 +12,13 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+/* ----------------------------------------------V|HEADER|V---------------------------------- */
 
-------------------------------------V|HEADER|V------------------------------------
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
-}
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
-}
 #header{
     flex: 2;
     display: flex;
-    flex-direction: row;
     background-color: var(--primary);
     justify-content:center;
-}
-.navbar, .btn-primary{
-    background-color: var(--primary); 
-    width: 100%;
 }
 #headerContainer{
     display: flex;
@@ -46,21 +28,11 @@ body {
     align-items: center;
 }
 
------------------------------------V|PAGE-CONTENT|V-------------------------
 
-#tjenestePanel{
-    background-color: var(--primary);
-    flex:5;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
+/* ----------------------------------------------V|Content|V---------------------------------- */
 
-#tjenestePanelContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    width: 70%;
+#mainContent {
+    flex: 8;
 }
 
 #col{
@@ -69,6 +41,11 @@ body {
     gap: 10px;
     width: 100%;
     
+}
+
+.hover-effect:hover {
+    background-color: var(--seccondary);
+    cursor: pointer;
 }
 
 #box{
@@ -82,14 +59,8 @@ body {
     border-radius: 5px;
 }
 
-#mainContent {
-    flex: 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* ----------------------------------------------V|FOOTER|V---------------------------------- */
 
------------------------------------V|FOOTER|V--------------------------------
 
 #footer{
     margin-top: auto;
