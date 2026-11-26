@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using JournalSys.Data;
+using JournalSys.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -59,6 +61,33 @@ using (var scope = app.Services.CreateScope())
             new JournalSys.Models.LabTestType { Navn = "EKG", Beskrivelse = "Hjerterytme" }
         );
         db.SaveChanges();
+    }
+
+    if (!db.Users.Any())
+    {
+        var hasher = new PasswordHasher<User>();
+
+        void LagBruker(string navn, string passord, string rolle)
+        {
+            var u = new User { Brukernavn = navn, Rolle = rolle };
+            u.PassordHash = hasher.HashPassword(u, passord);
+            db.Users.Add(u);
+        }
+
+        if (app.Environment.IsDevelopment())
+        {
+            LagBruker("admin1", "admin2", "admin3");
+            LagBruker("lege1", "lege2", "lege3");
+            LagBruker("sekretaer1", "sekretaer2", "sekretaer3");
+        }
+        else
+        {
+            var adminPassord = Environment.GetEnvironmentVariable("JOURNAL_ADMIN_PASSWORD");
+            if (!string.IsNullOrEmpty(adminPassord))
+            {
+                LagBruker("admin", adminPassord, "Admin");
+            }
+        }
     }
 }
 

@@ -19,4 +19,5 @@ public class JournalDbContext : DbContext
     public DbSet<LabTestType> LabTestTypes { get; set; }
     public DbSet<Assignment> Assignments { get; set; }
     public DbSet<Submission> Submissions { get; set; }
+    public DbSet<User> Users { get; set; }
 }

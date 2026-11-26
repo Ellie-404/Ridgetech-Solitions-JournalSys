@@ -6,6 +6,10 @@
 
 <div>
     <h2>Login</h2>
+    @if (!string.IsNullOrEmpty(Model.Feil))
+    {
+        <p class="text-danger">@Model.Feil</p>
+    }
     <form method="post">
         <div class="form-group">
             <label for="username">Username</label>
